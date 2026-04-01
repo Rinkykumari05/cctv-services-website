@@ -99,11 +99,3 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER", "")
 EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD", "")
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-
-
-import os
-
-if os.environ.get("CREATE_SUPERUSER") == "True":
-    from django.contrib.auth.models import User
-    if not User.objects.filter(username="admin").exists():
-        User.objects.create_superuser("admin", "admin@gmail.com", "admin123")
