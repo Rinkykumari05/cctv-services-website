@@ -1,0 +1,257 @@
+:root {
+    --primary: #0d6efd;
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --text: #1f2937;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    background: #fff;
+}
+
+.custom-navbar {
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(8px);
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #60a5fa !important;
+}
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.68), rgba(0, 0, 0, 0.72)),
+        url("../images/hero-image.avif") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-top: 90px;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3.7rem;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    max-width: 760px;
+    margin: 18px auto 0;
+}
+
+.dynamic-text {
+    color: #60a5fa;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #6b7280;
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.service-card,
+.product-card,
+.package-card,
+.testimonial-card,
+.contact-box,
+.feature-box {
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    background: #fff;
+}
+
+.service-card:hover,
+.product-card:hover,
+.package-card:hover,
+.testimonial-card:hover,
+.feature-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(13, 110, 253, 0.12);
+    color: var(--primary);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.stats-section {
+    background: #f8fafc;
+}
+
+.stat-box {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    height: 100%;
+}
+
+.stat-box h3 {
+    color: var(--primary);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    object-fit: cover;
+    border-radius: 22px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+.product-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.package-card.featured {
+    border: 2px solid var(--primary);
+    transform: scale(1.02);
+}
+
+.package-card ul {
+    padding-left: 18px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-card p {
+    color: #374151;
+}
+
+.cta-box {
+    background: linear-gradient(135deg, #0d6efd, #0f172a);
+    color: white;
+    border-radius: 26px;
+    padding: 48px 30px;
+}
+
+.form-control,
+.form-select,
+textarea {
+    border-radius: 12px;
+    padding: 12px 14px;
+}
+
+.footer-section {
+    background: #09101d;
+    color: #d1d5db;
+}
+
+.footer-title,
+.footer-subtitle {
+    color: #fff;
+    font-weight: 700;
+}
+
+.footer-text {
+    color: #d1d5db;
+    line-height: 1.7;
+}
+
+.footer-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer-list li {
+    margin-bottom: 10px;
+    color: #d1d5db;
+}
+
+.footer-line {
+    border-color: rgba(255, 255, 255, 0.12);
+    margin: 28px 0 18px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    z-index: 1000;
+}
+
+@media (max-width: 992px) {
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .package-card.featured {
+        transform: none;
+    }
+
+    .about-image {
+        min-height: 260px;
+    }
+}
