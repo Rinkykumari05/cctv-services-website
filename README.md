@@ -16,7 +16,12 @@ A responsive business website designed for CCTV installation and security servic
 - JavaScript
 
 ## 📷 Screenshots
-(Add screenshots here)
+![Home](home.png)
+![About](about.png)
+![Services](services.png)
+![Gallery](gallery.png)
+![Products](products.png)
+![Contact](contacts.png)
 
 ## ▶️ How to Run
 Open index.html in any browser
