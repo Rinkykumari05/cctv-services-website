@@ -125,10 +125,12 @@ cctv-services-website/
 
 ---
 
+---
+
 ## ▶️ Run Locally
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/Rinkykumari05/cctv-services-website.git
 cd cctv-services-website
 
 pip install -r requirements.txt
