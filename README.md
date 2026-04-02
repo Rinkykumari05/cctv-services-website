@@ -105,3 +105,32 @@ cctv-services-website/
 ├── db.sqlite3
 ├── manage.py
 └── requirements.txt
+
+
+---
+
+## ⚙️ How It Works
+
+### 👤 User Side
+- Visit the website  
+- View services and CCTV products  
+- Explore gallery and business information  
+- Submit inquiry through contact form  
+
+### 🛠️ Admin Side
+- Add, update, and delete products  
+- Upload and manage product images  
+- View and manage customer inquiries  
+- Control website content via Django Admin  
+
+---
+
+## ▶️ Run Locally
+
+```bash
+git clone <your-repo-link>
+cd cctv-services-website
+
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
